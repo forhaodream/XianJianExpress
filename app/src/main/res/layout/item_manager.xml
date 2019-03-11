@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/manager_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预约" />
+
+    <TextView
+        android:id="@+id/manager_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/manager_text"
+        android:text="2016-06-13 12:12" />
+
+    <TextView
+        android:id="@+id/manager_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="进行中"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <LinearLayout
+        android:id="@+id/manager_start_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/manager_text"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/qi" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manager_start_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金源花园长江路159号" />
+
+            <TextView
+                android:id="@+id/manager_start_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发货人：张三" />
+
+            <TextView
+                android:id="@+id/manager_start_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话：13298765432" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/manager_start_ll"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/zhong" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manager_end_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金源花园长江路159号" />
+
+            <TextView
+                android:id="@+id/manager_end_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发货人：张三" />
+
+            <TextView
+                android:id="@+id/manager_end_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话：" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="费用" />
+
+    <TextView
+        android:id="@+id/order_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_radius"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="取消订单"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

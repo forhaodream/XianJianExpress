@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/send_msg_return"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/arro_left_blue"
+            android:textColor="@color/app_green" />
+
+        <TextView
+            android:id="@+id/main_linear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="收货信息"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gray_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/main_title"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gray_view"
+        android:layout_marginLeft="10dp"
+        android:text="送到哪"
+        android:textColor="#e2041b"
+        android:textSize="25sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/take_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_start_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/ren" />
+
+        <TextView
+            android:id="@+id/msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_start_pic"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/send_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/msg_name"
+            android:background="@null"
+            android:hint="请输入姓名(必填)"
+            android:paddingRight="3dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_end"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_start"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_end_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/d" />
+
+        <TextView
+            android:id="@+id/msg_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_end_pic"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/send_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/msg_phone"
+            android:background="@null"
+            android:hint="请输入取件地址电话(必填)"
+            android:paddingRight="3dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_end"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_size_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/dx" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_size_pic"
+            android:text="@string/address" />
+
+
+        <EditText
+            android:id="@+id/send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/size_text"
+            android:background="@null"
+            android:hint="请输入送货城市(必填)"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/send_get_map"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/button_radius"
+            android:paddingRight="3dp"
+            android:text="获取"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_kinds"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_size"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_kinds_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/lx" />
+
+        <TextView
+            android:id="@+id/take_kinds_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_kinds_pic"
+            android:text="详细地址" />
+
+
+        <EditText
+            android:id="@+id/send_full_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/take_kinds_text"
+            android:background="@null"
+            android:hint="请输入具体地址(必填)"
+            android:paddingRight="3dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_ordered"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_kinds"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/person_share_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/wl" />
+
+        <TextView
+            android:id="@+id/take_ordred_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/person_share_pic"
+            android:text="代收人" />
+
+        <EditText
+            android:id="@+id/send_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/take_ordred_text"
+            android:background="@null"
+            android:hint="请输入代收人姓名"
+            android:paddingRight="3dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_ordered"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_message_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/beizhu" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_message_pic"
+            android:text="代收人电话" />
+
+        <EditText
+            android:id="@+id/send_agent_phone"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/message_text"
+            android:background="@null"
+            android:hint="请输入代收人电话" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gray_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/take_kinds" />
+
+    <TextView
+        android:id="@+id/send_true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/take_message"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_radius"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/take_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/arro_left_blue"
+            android:textColor="@color/app_green" />
+
+        <TextView
+            android:id="@+id/main_linear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要提货"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/take_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/main_title"
+
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_start_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/qi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_start_pic"
+            android:text="邮件信息" />
+
+        <ImageView
+            android:id="@+id/mail_send_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_end"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_start"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_end_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/zhong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_end_pic"
+            android:text="收货信息" />
+
+        <ImageView
+            android:id="@+id/mail_get_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_end"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_size_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/dx" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_size_pic"
+            android:text="货物大小" />
+
+        <Spinner
+            android:id="@+id/spinner_size"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/size_text"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_kinds"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_size"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_kinds_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/lx" />
+
+        <TextView
+            android:id="@+id/take_kinds_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_kinds_pic"
+            android:text="货物类型" />
+
+        <Spinner
+            android:id="@+id/spinner_kinds"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/take_kinds_text"
+            android:background="@null"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_ordered"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_kinds"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/person_share_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/shijian" />
+
+        <TextView
+            android:id="@+id/take_ordred_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/person_share_pic"
+            android:text="预约取货" />
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/take_ordred_text"
+            android:background="@null"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/take_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/take_ordered"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/take_message_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/take_ml"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/beizhu" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/take_message_pic"
+            android:text="备注信息" />
+
+        <EditText
+            android:id="@+id/message_edit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/message_text"
+            android:background="@null"
+            android:hint="点击输入备注信息" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/take_mr"
+            android:paddingRight="3dp"
+            android:src="@mipmap/arrow_right_blue" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gray_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/take_message"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="预计到达时间" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用约" />
+
+            <TextView
+                android:id="@+id/take_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="¥"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="实际费用可能因实际行驶里程/等候时间等因素而异" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/take_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_radius"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/pay_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/people" />
+
+        <TextView
+            android:id="@+id/pay_driver"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pay_img"
+            android:text="李师傅"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pay_driver_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_driver"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/pay_img"
+            android:text="最近成功接单" />
+
+        <TextView
+            android:id="@+id/pay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="已接单"
+            android:textColor="#ffc773" />
+    </RelativeLayout>
+
+</LinearLayout>

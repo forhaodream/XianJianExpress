@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/take_end"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/login_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_one"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="退出登录"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="23sp" />
+
+        <View
+            android:id="@+id/take_end_pic"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/msg_phone"
+            android:background="@android:color/black" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

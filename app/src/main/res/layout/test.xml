@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.cloudtech.leapingspider.individual.view.CViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_home_bg"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/nine" />
+
+        <ImageView
+            android:id="@+id/iv_interview_bg"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/car" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_news_bg"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:src="@mipmap/leapingspider_job_news" />-->
+
+        <ImageView
+            android:id="@+id/iv_setting_bg"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/car" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/nine_one" />
+
+        <ImageView
+            android:id="@+id/iv_interview"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/car" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_news"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:alpha="0"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:src="@mipmap/leapingspider_job_news_xz" />-->
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/car_one" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal|bottom"
+            android:text="recruitment"
+            android:textColor="@color/app_green" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:text="interview"
+            android:textColor="@color/app_green" />
+
+        <!--<RadioButton-->
+        <!--style="@style/navigation_bottom_radio"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center_horizontal|bottom"-->
+        <!--android:text="@string/news"-->
+        <!--android:textColor="@color/gray_common" />-->
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:text="设置"
+            android:textColor="@android:color/black" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal|bottom"
+            android:text="时间" />
+
+        <RadioButton
+            android:id="@+id/rb_interview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:text="时间" />
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_news"-->
+        <!--style="@style/navigation_bottom_radio"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:alpha="0"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center_horizontal|bottom"-->
+        <!--android:text="@string/news"-->
+        <!--android:checked="false" />-->
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:text="shezhi " />
+    </RadioGroup>
+
+</RelativeLayout>

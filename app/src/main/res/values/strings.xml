@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">乡间快递</string>
+    <string name="name">姓名</string>
+    <string name="phone">电话</string>
+    <string name="address">地址信息</string>
+    <string name="dialog">姓名、电话和地址为必填项</string>
+    <string name="order_warning">在发车之前, 根据预估里程、等待时间计算收费.</string>
+    <string name="order_warn">具体收费标准按实际情况定.</string>
+</resources>
